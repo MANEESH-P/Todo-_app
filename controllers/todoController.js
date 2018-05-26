@@ -18,6 +18,15 @@ var urlencodedParser = bodyParser.urlencoded({extended: false});
 
 module.exports =function(app){
 
+app.get('/',function(req,res){
+  //get data from mongodb and pass it to view
+  Todo.find({}, function(err, data){
+    if (err) throw err;
+    res.render('todo', {todos: data});
+  })
+
+});
+
 app.get('/todo',function(req,res){
   //get data from mongodb and pass it to view
   Todo.find({}, function(err, data){
