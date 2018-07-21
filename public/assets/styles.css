@@ -33,7 +33,7 @@ input[type="text"]{
 button{
 
     padding: 20px;
-    width: 30%;
+    width: 35%;
     float: right;
     background: #23282e;
     border: 0;
@@ -71,4 +71,28 @@ h1{
     text-align: center;
     font-weight: bold;
     font-family: sans-serif;
+}
+@media screen and (max-width:760px){
+  input[type="text"]{
+      width: 60%;
+      padding: 5px;
+      background:#181c22;
+      border: 0;
+      float: left;
+      font-size: 20px;
+      color: #989898;
+  }
+
+  button{
+
+      padding: 10px;
+      width: 30%;
+      float: right;
+      background: #23282e;
+      border: 0;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      font-size: 13px;
+  }
 }
